@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TaskFields, FieldItem } from '@qualtrics/plugin-ui-react';
-import { defaultFormFields, validateFormFieldValues, hydrateFormWithSavedValues } from './configuration-form-fields';
+import { defaultFormFields, validateFormFieldValues, hydrateFormFieldsWithSavedValues } from './configuration-form-fields';
 
-export default function ConfigurationForm(props) {
+export function ConfigurationForm(props) {
   const [ formFields, setFormFields ] = useState(_loadFormFields);
   const values = [ ...formFields ];
 

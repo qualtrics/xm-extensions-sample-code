@@ -1,4 +1,4 @@
-export default function getDefaultTaskDefinition() {
+export function getDefaultTaskDefinition() {
   return {
     url: 'https://www.example.com',
     method: 'POST',

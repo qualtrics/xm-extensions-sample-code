@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import merge from 'lodash.merge';
-import ConfigurationForm from './configuration-form';
-import getDefaultTaskDefinition, { formatConnection, formatFormData } from './outbound-http-request-task-definition';
-import addCustomPipedTextOptions from './custom-piped-text-options';
+import { ConfigurationForm } from './configuration-form';
+import { getDefaultTaskDefinition, formatConnection, formatFormData } from './outbound-http-request-task-definition';
+import { addCustomPipedTextOptions } from './custom-piped-text-options';
 
 import './plugin-app.scss';
 
-export default function PluginApp(props) {
+export function PluginApp(props) {
   const client = props.client;
   const [ taskDefinition, setTaskDefinition ] = useState(_loadTaskDefinition);
 
